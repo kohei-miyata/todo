@@ -36,7 +36,7 @@
                             <div class="text-center text-success" v-on:click="doneTodoUpdate(todo)" v-if="todo.done == 0">Done</div>
                             <div class="text-center" v-on:click="doneTodoUpdate(todo)" v-if="todo.done == 1">Not Done</div>
                             <div class="text-center" data-toggle="modal" :data-target="'#todoModal'+goalId+todo.id" v-on:click="content = todo.content">Edit</div>
-                            <div class="text-center" data-toggle="modal" :data-target="'#todoSortModal'+goalId+todo.id" v-on:click="content = todo.content">Sort</div>
+                            <div class="text-center" data-toggle="modal" :data-target="'#todoSortModal'+goalId+todo.id" v-on:click="content = todo.content">並び替え</div>
                             <div class="text-center text-danger" v-on:click="deleteTodo(todo)">Delete</div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             <div class="text-center text-success" v-on:click="doneTodoUpdate(todo)" v-if="todo.done == 0">Done</div>
                             <div class="text-center" v-on:click="doneTodoUpdate(todo)" v-if="todo.done == 1">Not Done</div>
                             <div class="text-center" data-toggle="modal" :data-target="'#todoModal'+goalId+todo.id" v-on:click="content = todo.content">Edit</div>
-                            <div class="text-center" data-toggle="modal" :data-target="'#todoSortModal'+goalId+todo.id" v-on:click="content = todo.content">Sort</div>
+                            <div class="text-center" data-toggle="modal" :data-target="'#todoSortModal'+goalId+todo.id" v-on:click="content = todo.content">並び替え</div>
                             <div class="text-center text-danger" v-on:click="deleteTodo(todo)">Delete</div>
                         </div>
                     </div>
